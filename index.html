@@ -139,12 +139,12 @@ p{margin:.4em 0}.hint{font-size:.9rem;opacity:.8}
     <rect x="18" y="52" width="84" height="60" rx="4" fill="#f06292"/><rect x="54" y="52" width="12" height="60" fill="#fff3"/>
     <g id="lid"><rect x="12" y="36" width="96" height="22" rx="4" fill="#e91e7a"/><rect x="54" y="36" width="12" height="22" fill="#fff4"/><path d="M60 36c-20-22-34-6-20 0zM60 36c20-22 34-6 20 0z" fill="#ffd54f"/></g>
   </svg>
-  <div class="photo" id="ph" style="display:none"><img id="im" alt="" style="display:none"><span id="pt" class="hint">Your photo goes here</span></div>
+  <div class="photo" id="ph" style="display:none"><img id="im" alt="" style="display:none"><span id="pt" class="hint"></span></div>
   <div id="fin" class="fadein"><h2 style="font-family:'Brush Script MT',cursive;font-size:2rem">Lots of love for you ❤️</h2><p>Once again, Happy Birthday, My Man!</p><button class="btn" onclick="replay()">↻ Replay</button></div>
 </div>
 
 <script>
-const PIN="28926",PHOTO="",$=id=>document.getElementById(id);
+const PIN="28926",PHOTO="aaa.jpeg",$=id=>document.getElementById(id);
 let cur="",cs=0,popped=0;
 // floating hearts
 for(let i=0;i<16;i++){const s=document.createElement("span");s.textContent=["💗","💖","✨","💕"][i%4];s.style.cssText=`left:${Math.random()*100}%;font-size:${12+Math.random()*18}px;animation-duration:${9+Math.random()*10}s;animation-delay:${-Math.random()*14}s`;$("bg").appendChild(s)}
